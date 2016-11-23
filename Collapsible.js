@@ -98,7 +98,7 @@ class Collapsible extends Component {
   render() {
     const { height, contentHeight } = this.state;
     const style = {
-      overflow: 'hidden',
+      overflow: 'scroll', //rexay: hack: changed from...  overflow: 'hidden', https://github.com/oblador/react-native-collapsible/issues/51
       height: height,
     };
     let contentStyle = {};
